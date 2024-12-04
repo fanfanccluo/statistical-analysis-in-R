@@ -1,0 +1,530 @@
+---
+title: "CS01: Biomarkers of Recent Use"
+authors: "Junzhi Wei, Shilpa Chowbey, Zifan Luo, Joy Kuo"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    code_folding: show
+---
+
+## Introduction
+```{r setup, include=FALSE}
+# control global Rmd chunk settings
+knitr::opts_chunk$set(echo = TRUE, warning=FALSE, message=FALSE)
+```
+  This case study investigates the complexities surrounding cannabis-related driving impairment and the challenges of establishing reliable legal thresholds for THC intoxication. Motor vehicle accidents account for about two-thirds of trauma center admissions in the U.S., with cannabis and alcohol most frequently detected in these cases[^1]. 
+While cannabis remains federally illegal, 24 states, including California, have legalized recreational use, which may have led to increased consumption. This shift may have resulted in the increase of cannabis consumption. According to the “Results of the 2007 National Roadside Survey of Alcohol and Drug Use by Drivers”, there was a 25% increase in cannabis use nationwide between 2002 and 2015[^2]. Additionally, the THC detection has increased over time in motor vehicle crashes as the drivers have THC or its related metabolites in their body[^3]. Such increases have brought up concerns over possible impaired driving and related public health risks.
+  
+  One key challenge in addressing driving under the influence of cannabis (DUIC) is the lack of consistent, reliable cutoffs for THC detection to ensure road safety. As the per se laws indicate, “a driver is deemed to have committed an offense if THC is detected at or about a pre-determined cutoff”[^4]. There are 19 states adopting this law for zero tolerance on cannabis use. Some states set their limit to be 1-5 ng/mL THC cutoffs in whole blood, and some states use this law for both THC and its metabolites[^5]. Additionally, for frequent users, THC concentration remains detectable for longer than the occasional users, and detection in blood of THC and some of its metabolites is not a certain indicator of impairment[^6]. Thus, it is difficult to define cutoffs for safe driving and select appropriate compounds for gauging impairment. This is due to various factors that influence the THC concentration, such as the smoking situation regarding the time and number of puffs, frequency of use, and method of consumption. 
+  
+  Given these complexities, this case study aims to explore a biomarker that could best indicate recent cannabis use and impairment, along with an extended exploration on the difference between frequent users and occasional users.
+
+[^1]:https://academic.oup.com/clinchem/article/59/3/478/5621997
+[^2]:https://rosap.ntl.bts.gov/view/dot/1913 
+[^3]:file:///Users/weijunzhi/Downloads/fpsyt-12-689444.pdf
+[^4]:https://www.tandfonline.com/doi/full/10.1080/15389588.2020.1851685
+[^5]:https://www.tandfonline.com/doi/full/10.1080/15389588.2020.1851685
+[^6]:https://academic.oup.com/clinchem/article/59/3/519/5622035
+
+## Questions
+1. Which compound, in which matrix, and at what cutoff is the best biomarker of recent use?
+
+2. What different cutoff thresholds can be established for frequent users versus occasional users to accurately gauge impairment?
+
+### Load packages
+
+```{r load-packages, message=FALSE}
+library(tidyverse)
+library(dplyr)
+library(patchwork)
+```
+
+## The Data
+In this case study, we utilize the data from Professor Rob Fitzgerald's group[^7]. They utilized a placebo-controlled, double-blinded, and randomized study design to investigate whether cannabinoid concentrations in whole blood (WB), oral fluid (OF), or breath could identify use within the timeframe of 3 hours, which is the period of the greatest impairment. After exclusion of participants that their oral fluid's THC concentration is equal to or greater than 5 ng/mL on day of study (n=7), there were 191 volunteers (age 21 - 55) in the study with compensation, and all of them had a valid driver license and self-reported using cannabis at least 4 times in the past month. The participants were classified with two groups: frequent user and occasional user, where frequent user is defined as smoking cannabis 4 weeks or more, and occasional user is defined as smoking cannabis less than 4 weeks. 
+  
+During the experiment, they were randomly assigned to three treatments receiving a cigarette: placebo (0.02% THC), 5.9% THC, and 13.4% THC. Each group was balanced with approximately equal numbers of frequent and occasional users. Participants were instructed to smoke a 700 mg cigarette ad libitum within 10 minutes, with a minimum requirement of four puffs. Blood, oral fluid, and breath collections were collected prior to smoking to establish baseline measurements. After smoking consumption, there were 4 additional oral fluid and breath collections, and 8 blood collections were completed within the 6 hours from the start of smoking. There were four driving simulations conducted at four intervals: 26, 96, 211, and 273 minutes after smoking. Participants were allowed to eat and drink water between collections, but not within 10 min of oral fluid collection.
+
+[^7]:https://academic.oup.com/jat/article/45/8/820/6311388?login=false#303593274
+
+### Data Import
+First, we read each of the 3 CSV files (whole blood, oral fluid, breath) and make individual dataframes. 
+```{r}
+WB <- read_csv("data/Blood.csv")
+BR <- read_csv("data/Breath.csv")
+OF <- read_csv("data/OF.csv")
+```
+
+### Data Wrangling
+
+First, we are wrangling the whole blood data. This involves transforming, combining, and renaming the columns. For example, the time spent smoking was a number (e.g. 103 min) and became a range (e.g. 101-180 min).
+
+```{r wholeBlood}
+# mutating 'treatment' column values & renaming columns. 
+WB <- WB |> 
+  mutate(Treatment = fct_recode(Treatment, 
+                                "5.9% THC (low dose)" = "5.90%",
+                                "13.4% THC (high dose)" = "13.40%"),
+         Treatment = fct_relevel(Treatment, "Placebo", "5.9% THC (low dose)")) |> 
+  janitor::clean_names() |>
+  rename(thcoh = x11_oh_thc,
+         thccooh = thc_cooh,
+         thccooh_gluc = thc_cooh_gluc,
+         thcv = thc_v)
+
+# mutating 'time_from_start' column to be a range instead of a value
+WB <- WB |> 
+  mutate(timepoint = case_when(time_from_start < 0 ~ "pre-smoking",
+           time_from_start > 0 & time_from_start <= 30 ~ "0-30 min",
+           time_from_start > 30 & time_from_start <= 90 ~ "31-90 min",
+           time_from_start > 90 & time_from_start <= 180 ~ "91-180 min",
+           time_from_start > 180 & time_from_start <= 210 ~ "181-210 min",
+           time_from_start > 210 & time_from_start <= 240 ~ "211-240 min",
+           time_from_start > 240 & time_from_start <= 270 ~ "241-270 min",
+           time_from_start > 270 ~ "271+ min"
+   ))
+```
+
+Now, we will wrangle & clean the oral fluid dataframe. Similar to the whole blood dataframe, we will re-code and re-level 'treatment'. We will also clean & rename certain columns.
+
+```{r oralFluid}
+# treatment re-coded and re-leveled; col names modified
+OF <- OF |>
+  mutate(Treatment = fct_recode(Treatment, 
+                                "5.9% THC (low dose)" = "5.90%",
+                                "13.4% THC (high dose)" = "13.40%"),
+         Treatment = fct_relevel(Treatment, "Placebo", "5.9% THC (low dose)")) |> 
+  janitor::clean_names() |>
+  rename(thcoh = x11_oh_thc,
+         thcv = thc_v,
+         fluid_type=fluid)
+
+# transforming values
+OF <- OF |> 
+  mutate(timepoint = case_when(time_from_start < 0 ~ "pre-smoking",
+           time_from_start > 0 & time_from_start <= 30 ~ "0-30 min",
+           time_from_start > 30 & time_from_start <= 90 ~ "31-90 min",
+           time_from_start > 90 & time_from_start <= 180 ~ "91-180 min",
+           time_from_start > 180 & time_from_start <= 210 ~ "181-210 min",
+           time_from_start > 210 & time_from_start <= 240 ~ "211-240 min",
+           time_from_start > 240 & time_from_start <= 270 ~ "241-270 min",
+           time_from_start > 270 ~ "271+ min"
+   ))
+```
+
+Next, we will transform the breath dataframe in a similar fashion as the previous two.
+
+```{r breath}
+# treatment re-coded and re-leveled; col names modified
+BR <- BR |>
+  mutate(Treatment = fct_recode(Treatment, 
+                                "5.9% THC (low dose)" = "5.90%",
+                                "13.4% THC (high dose)" = "13.40%"),
+         Treatment = fct_relevel(Treatment, "Placebo", "5.9% THC (low dose)")) |> 
+  janitor::clean_names() |>
+  rename(thc = thc_pg_pad,
+         fluid_type=fluid)
+
+# transforming values
+BR <- BR |> 
+  mutate(timepoint = case_when(time_from_start < 0 ~ "pre-smoking",
+           time_from_start > 0 & time_from_start <= 40 ~ "0-40 min",
+           time_from_start > 40 & time_from_start <= 90 ~ "41-90 min",
+           time_from_start > 90 & time_from_start <= 180 ~ "91-180 min",
+           time_from_start > 180 & time_from_start <= 210 ~ "181-210 min",
+           time_from_start > 210 & time_from_start <= 240 ~ "211-240 min",
+           time_from_start > 240 & time_from_start <= 270 ~ "241-270 min",
+           time_from_start > 270 ~ "271+ min"
+   ))
+
+```
+
+Finally, we will combine all of our dataframes into one, then write that combination to a CSV file. Then, we will pivot the data to make 'compound' a column with a corresponding 'value'column.
+
+```{r combiningDf}
+combined_csv <- bind_rows(WB, BR, OF)
+combined_csv <- combined_csv |> 
+  select(1:5,time_from_start,everything()) |>
+  pivot_longer(7:15) 
+
+combined_csv <- combined_csv %>%
+  rename(compound = name)
+
+head(combined_csv)
+combined_csv
+
+
+```
+Before we start doing any analysis, we also need to handle all the missing entries in the 'value' column.
+```{r}
+combined_csv<-combined_csv %>% filter(!is.na(value))
+combined_csv
+```
+
+## Analysis
+We want to check the general trend of the compounds across time. The trends are grouped by treatment group because we expect that the values of a certain compound should increase from the placebo to the 5.9% dosage to the 13.4% dosage. Additionally, we should expect that compounds should not change significantly change value for the placebo users.
+
+Below is a function that will plot all of the compounds for a given fluid type (provided through the matrix parameter). Notably, we are using geom_smooth() with the loess method. This allows us to get a trend line that predicts using local data. 'Span' is the other parameter which specifies how large a range the trend line will be calculated from. We made this a parameter when we realized that the different matrices needed to be customized. This provides a more accurate 'average' overview that is much clearer than a normal lineplot. The other advantage of using this method is that we can see the variability of the data throughout the trend. If the shaded region is smaller, we know that the trend has been captured quite well. 
+```{r plotFunction}
+plot_line_time <- function(matrix, span) {
+  combined_csv |> 
+      filter(!is.na(time_from_start), fluid_type==matrix) |>
+      ggplot(aes(x=time_from_start, y=value, color=treatment)) + 
+        geom_smooth(method = "loess", span = span) +
+        facet_wrap(~compound, scales="free") +
+        scale_color_manual(values=c("#FF9108", "#B692F7", "#84AFE6")) +
+        theme_classic() +
+        labs(title = paste("Measured Compounds in", matrix, "Over Time"),
+             x="Time From Start (min)") +
+        theme(legend.position="bottom",
+              legend.title=element_blank(),
+              strip.background=element_blank(),
+              plot.title.position="plot") 
+}
+```
+Using our function, let's look at whole blood.
+```{r WBoverTime}
+plot_line_time(matrix="WB", span=0.2)
+```
+Interestingly, the trend does not seem to be what we expected. The 5.9% dose consistently yields higher values than either of the other dosages. However, the placebo dosage values does seem to hold constant for nearly all compounds, excepting THCV The variability is very tight for CBN, CBG, and THC. THCOH and CBD also have a mostly tight variability, except a bit before the smoking time started. From these graphs, THCOH seems like the most promising compound to investigate further. Other options could be CBN and THC.  
+
+Now, let's look at breath.
+```{r BRoverTime}
+plot_line_time(matrix="BR", span=0.1)
+```
+
+There is only one compound that can be measured from breath, and that is THC. This compound actually *does* follow our predicted trend; this is definitely worth pursuing more analysis. We might notice that that the distribution seems to be bimodal, but this is just a consequence of the geom_smooth() method. For that reason, we lowered the span for these generated graphs.
+
+Finally, let's look at oral fluid.
+```{r OFoverTime}
+plot_line_time(matrix="OF", span=0.05)
+```
+Immediately, we notice that the variability is quite tight on THCV, CBN, and THCOH. A lot of the graphs mirror each other; the compounds hit a peak quickly around 50 minutes, then plateau around 100 minutes. We lowered the span quite a bit to most accurately capture the trend for this matrix. From these graphs, THCV and THC could be options to explore more, but they do not seem as promising as previously mentioned compounds.
+
+With all the above analysis, we could draw a rough conclusion that the worth-exploring compounds include CBN,THC and THCOH in Whole Blood, THC in Breath plus THCV and THC in the oral fluid.
+
+This analysis aims to answer the main question that is 'which compounds, in which matrices (fluid types), and at what cutoff levels serve as the best biomarker for recent cannabis use'. We achieve this by analyzing sensitivity (the ability to correctly detect true positives) and specificity (the ability to correctly detect true negatives) at various threshold levels for each compound and matrix combination. An ideal biomarker will have a balance of both high sensitivity and specificity.However, in our analysis, we decide to prioritize the specificity over sensitivity. Positive roadside tests are often confirmed with more sensitive lab-based tests. By focusing on specificity at the roadside level, authorities can minimize unnecessary detainment or inconvenience, while lab tests can verify impairment levels more accurately. Thus, our goal is to find the cutoff that optimize the specificity while keeping a reasonable sensitivity level.
+
+The code chunk below is a function that computes specificity, sensitivity, and other metrics based on a dataset, cutoff values, compound, and timepoint. 
+```{r}
+make_calculations <- function(dataset, cutoff, compound, timepoint_use, group){
+  df <- dataset |>
+    select(treatment, {{ compound }}, timepoint, group) |>
+    filter(timepoint == timepoint_use, group == group, !is.na({{ compound }}))
+
+  if(nrow(df)>0){
+    if(timepoint_use == "pre-smoking"){
+      output <- df |> 
+        summarize(TP = 0,
+                  FN = 0,
+                  FP = sum(!!sym(compound) >= cutoff),
+                  TN = sum(!!sym(compound) < cutoff)) 
+    }else{
+      if(cutoff == 0){
+        output_pre <- df |> 
+          filter(timepoint_use == "pre-smoking") |>
+          summarize(TP = 0,
+                    FN = 0,
+                    FP = sum(!!sym(compound) >= cutoff),
+                    TN = sum(!!sym(compound) < cutoff)) 
+        
+        output <- df |> 
+          filter(timepoint_use != "pre-smoking") |>
+          summarize(TP = sum(treatment != "Placebo" & !!sym(compound) > cutoff),
+                    FN = sum(treatment != "Placebo" & !!sym(compound) <= cutoff),
+                    FP = sum(treatment == "Placebo" & !!sym(compound) > cutoff),
+                    TN = sum(treatment == "Placebo" & !!sym(compound) < cutoff))
+        
+        output <- output + output_pre
+      }else{
+        output_pre <- df |> 
+          filter(timepoint_use == "pre-smoking") |>
+          summarise(TP = 0,
+                    FN = 0,
+                    FP = sum(!!sym(compound) >= cutoff),
+                    TN = sum(!!sym(compound) < cutoff)) 
+        
+        output <- df |> 
+          filter(timepoint_use != "pre-smoking") |>
+          summarise(TP = sum(treatment != "Placebo" & !!sym(compound) >= cutoff),
+                    FN = sum(treatment != "Placebo" & !!sym(compound) < cutoff),
+                    FP = sum(treatment == "Placebo" & !!sym(compound) >= cutoff),
+                    TN = sum(treatment == "Placebo" & !!sym(compound) < cutoff))
+        
+        output <- output + output_pre
+      }
+    }
+  
+  output <- output |>
+    mutate(detection_limit = cutoff,
+           compound = compound,
+           time_window = timepoint_use,
+           group = group,
+           NAs = nrow(dataset) - nrow(df),
+           N = nrow(dataset),
+           Sensitivity = (TP/(TP + FN)), 
+           Specificity = (TN /(TN + FP)),
+           Youden_J = Sensitivity + Specificity - 1,
+           PPV = (TP/(TP+FP)),
+           NPV = (TN/(TN + FN)),
+           Efficiency = ((TP + TN)/(TP + TN + FP + FN))*100
+    )
+  return(output)
+}
+}
+
+sens_spec_cpd <- function(dataset, cpd, timepoints){
+  args2 <- list(start = timepoints$start, 
+                stop = timepoints$stop, 
+                tpt_use = timepoints$timepoint)
+  out <- args2 |> 
+    pmap_dfr(make_calculations, dataset, compound = cpd)
+  return(out)
+}
+```
+For each potential possible biomarkers, we’ll use various cutoff levels to classify samples as recent use or not. We’ll calculate sensitivity and specificity at each cutoff and plot the results out.
+
+First of all, we will calculate performance metrics (Sensitivity and Specificity) for multiple compounds across different cutoff levels and timepoints in whole blood samples. Below is a function that will return a comprehensive dataset that contains the metrics for each combination of cutoff, compound, and timepoint.
+```{r}
+cs_data<-bind_rows(WB, BR, OF)
+# specify which calculations to make
+cutoffs <- c(0.5, 1, 2,5, 10)
+compounds <- combined_csv |> filter(fluid_type=="WB") |> filter(!is.na(value)) |> distinct(compound) |> pull(compound)
+WB_timepoints <- c("pre-smoking","0-30 min","31-70 min", "71-100 min","101-180 min","181-210 min", "211-240 min","241-270 min", "271-300 min", "301+ min") 
+WB <- cs_data |> filter(fluid_type=="WB")
+
+# Specify all parameter combinations
+param_grid <- expand.grid(
+  cutoffs = cutoffs,
+  compounds = compounds,
+  timepoint_use = WB_timepoints,
+  group = unique(WB$group)
+)
+
+
+# Calculate for all cutoff-compound-timepoint combinations
+WB_ss <- purrr::pmap_dfr(param_grid, ~ make_calculations(dataset=WB, cutoff = ..1, compound = as.character(..2), timepoint_use = ..3, group = ..4))
+
+WB_ss
+```
+Below is a function designed to visualize the performance metrics (Sensitivity and Specificity) of a specified compound  across different time windows and cutoff levels:
+```{r}
+plot_cutoffs <- function(dataset, timepoint_use_variable, tissue, cpd){
+    # control colors and lines used in plots
+    col_val = c("#D9D9D9", "#BDBDBD", "#969696", "#636363", "#252525")
+    lines = rep("solid", 5)
+    
+    # prep data
+    df_ss <- dataset |> 
+      filter(compound == cpd) |>
+      mutate(time_window = fct_relevel(as.factor(time_window), levels(timepoint_use_variable)),
+             detection_limit = as.factor(detection_limit),
+             Sensitivity =  round(Sensitivity*100, 0),
+             Specificity =  round(Specificity*100, 0),
+            Youden_J = Sensitivity + Specificity - 100)       
+      
+    # plot sensitivity
+    p1 <- df_ss |> 
+      ggplot(aes(x = time_window, y = Sensitivity, 
+                 color = detection_limit)) + 
+      geom_line(linewidth = 1.2, aes(group = detection_limit, 
+                                linetype = detection_limit)) + 
+      geom_point(show.legend=FALSE) + 
+      ylim(0,100) +
+      scale_x_discrete(labels = function(x) str_wrap(x, width = 5)) +
+      scale_linetype_manual(values=lines) +
+      scale_color_manual(values = col_val, name = "Cutoff \n (ng/mL)",
+                        guide = guide_legend(override.aes = list(linetype = c(1),
+                        shape = rep(NA, length(lines))) )) +
+      theme_classic() +
+      theme(plot.title.position = "plot",
+            axis.title = element_text(size=14),
+            axis.text = element_text(size=10),
+            legend.position = "none", 
+            panel.grid = element_blank(),
+            strip.background = element_blank()
+            ) +
+      guides(linetype = "none") +
+      labs(x = "Time Window (min)", 
+           y = "Sensitivity", 
+           title = paste0(tissue,": ", toupper(cpd)) )
+  
+  # plot specificity
+  p2 <- df_ss |> 
+      ggplot(aes(x = time_window, y = Specificity,
+                 group = detection_limit, 
+                 color = detection_limit, 
+                 linetype = detection_limit)) + 
+      geom_line(linewidth = 1.2) +
+      geom_point() + 
+      ylim(0,100) +
+      scale_color_manual(values = col_val) +
+      scale_x_discrete(labels = function(x) str_wrap(x, width = 5)) +
+      scale_linetype_manual(values = lines, 
+                            guide = guide_legend(override.aes = list(linetype = "solid",
+                                                                     shape = rep(NA, length(lines))) )) +
+      theme_classic() +
+      theme(axis.title = element_text(size=14),
+            axis.text = element_text(size=10),
+            legend.position = c(0.35, 0.25),
+            panel.grid = element_blank(),
+            strip.background = element_blank()) +
+      labs(x = "Time Window", 
+           y = "Specificity",
+           title = "" )
+  
+  # combine plots (uses patchwork)
+  p1 + p2
+  
+}
+```
+Let's first visualize the THC's performance metrics in the whole blood:
+```{r}
+plot_cutoffs(dataset=WB_ss, 
+             timepoint_use_variable=WB$timepoint, 
+             tissue="Blood", 
+             cpd="thc")
+```
+
+We can tell from the graph that higher cutoff levels (e.g., 5 ng/mL and 10 ng/mL) have a much lower sensitivity compared to lower cutoff levels (e.g., 0.5 ng/mL and 1 ng/mL), especially after the initial time windows. This indicates that higher cutoffs may miss more THC-positive cases as time goes on, likely because THC levels drop below these higher thresholds over time. Specificity is highest at the higher cutoff levels (e.g., 10 ng/mL) and decreases slightly at lower cutoffs (e.g., 0.5 ng/mL). This indicates that using a higher cutoff may reduce false positives, as only very high THC levels would be considered positive. 
+
+Next,let's visualize CBN's performance in the whole blood across time:
+```{r}
+plot_cutoffs(dataset=WB_ss, 
+             timepoint_use_variable=WB$timepoint, 
+             tissue="Blood", 
+             cpd="cbn")
+```
+
+Sensitivity starts relatively high at the initial time windows but drops sharply to near zero within a few hours post-smoking.
+This pattern is seen across all cutoff levels, with no cutoff level providing significant sensitivity beyond the initial time window.This rapid decline suggests that CBN is detectable in blood only shortly after smoking and that its levels fall quickly, making it difficult to detect as time progresses. 
+On the other hand, specificity remains consistently high (near 100%) across all time windows and cutoff levels. This tells us that false positives for CBN are rare in this dataset, which implies that any detected CBN is likely a true positive.
+
+Let's also take a look at THCOH's performance in the whole blood:
+```{r}
+plot_cutoffs(dataset=WB_ss, 
+             timepoint_use_variable=WB$timepoint, 
+             tissue="Blood", 
+             cpd="thcoh")
+```
+
+Sensitivity for THCOH is generally low across all time windows, with most cutoff levels yielding very low values (close to 0%).Only the lowest cutoff (0.5 ng/mL) shows some sensitivity, but even this drops steadily over time and remains below 50%. This suggests that THCOH is not readily detectable in blood with high sensitivity, possibly because its concentration may not be high enough to meet the detection limits, especially at higher cutoffs.While THCOH has lower sensitivity, its specificity remains near 100% across all time windows, indicating a very low likelihood of false positives.
+
+In a conclusion, for all potential biomarker compounds in the whole blood, THC is the best biomarker among the three if we want to  prioritize specificity while maintaining a reasonable sensitivity level. It has the highest initial sensitivity and retains reasonable detectability over multiple time windows, especially at lower cutoff levels. For THC detection in blood, 5 ng/mL is likely the best cutoff. This cutoff effectively minimizes false positives, ensuring that individuals who test positive are more likely to have significant, recent THC levels that may indicate impairment. This threshold reduces the likelihood of capturing low, residual THC levels that could linger in the bloodstream without contributing to impairment, which is particularly valuable in legal and roadside testing contexts.
+
+Below is a dataframe that contains the performance metrics (Sensitivity and Specificity) for multiple compounds across different cutoff levels and timepoints in oral fluid samples:
+```{r}
+cutoffs <- c(0.5, 1, 2, 5, 10)
+compounds <- combined_csv |> filter(fluid_type=="OF") |> filter(!is.na(value)) |> distinct(compound) |> pull(compound)
+OF_timepoints <- c("pre-smoking","0-30 min","31-90 min",
+                   "91-180 min", "181-210 min", "211-240 min",
+                   "241-270 min", "271+ min") 
+OF <- cs_data |> filter(fluid_type=="OF")
+
+# Specify all parameter combinations
+param_grid <- expand.grid(
+  cutoffs = cutoffs,
+  compounds = compounds,
+  timepoint_use = OF_timepoints,
+  group = unique(OF$group)
+)
+
+# Calculate for all cutoff-compound-timepoint combinations
+OF_ss <- purrr::pmap_dfr(param_grid, ~ make_calculations(
+  dataset = OF,
+  cutoff = ..1,
+  compound = as.character(..2),
+  timepoint_use = ..3,
+  group = ..4
+))
+
+ OF_ss
+```
+Let's take a look at the THC's performance in Oral Fluid:
+```{r}
+plot_cutoffs(dataset=OF_ss, 
+             timepoint_use_variable=OF$timepoint, 
+             tissue="Oral Fluid", 
+             cpd="thc")
+```
+
+In general, THC detection in oral fluid across various time windows has higher average sensitivity and specificity compared to other compounds in other matrix that we discussed above. Lower cutoffs (0.5 ng/mL and 1 ng/mL) provide higher sensitivity shortly after smoking but come with lower specificity in the early time windows, potentially leading to more false positives. Since in our analysis, we chose to prioritize the specificity, cutoff at 5ng/mL appears to be the best candidate for a biomarker as it maintains high specificity and relatively stable sensitivity across time windows, making it a reliable choice for detecting THC presence without too many false positives, but also at the same time it keeps a reasonable high initial sensitivity.
+
+Performance of THCV in Oral Fluids:
+```{r}
+plot_cutoffs(dataset=OF_ss, 
+             timepoint_use_variable=OF$timepoint, 
+             tissue="Oral Fluid", 
+             cpd="thcv")
+```
+THCV’s short detection window and rapid decline in sensitivity suggest it may be useful only for detecting immediate, post-use impairment.For roadside testing, lower cutoffs (0.5-1 ng/mL) may be necessary to capture even brief periods of detectability, but the usefulness of THCV as a standalone marker is limited due to its very short detection window.
+
+In a conclusion,THC’s detection profile(at 5 ng/mL cutoff) in oral fluid makes it suitable for roadside testing, as it can reliably indicate recent cannabis use without the extremely short window of detectability seen with THCV.5 ng/mL cutoff provides a balance between high specificity and a reasonable detection window, capturing recent THC use while minimizing the detection of residual levels that are unlikely to indicate impairment.
+
+
+Dataframe that contains the performance metrics (Sensitivity and Specificity) for multiple compounds across different cutoff levels and timepoints in breath samples:
+```{r}
+# specify which calculations to make
+cutoffs <- c(0.5, 1, 2, 5, 10)
+compounds <- combined_csv |> filter(fluid_type=="BR") |> filter(!is.na(value)) |> distinct(compound) |> pull(compound)
+BR_timepoints <- c("pre-smoking","0-40 min","41-90 min",
+                   "91-180 min", "181-210 min", "211-240 min",
+                   "241-270 min", "271+ min")
+BR <- cs_data |> filter(fluid_type=="BR")
+
+# Specify all parameter combinations
+param_grid <- expand.grid(
+  cutoffs = cutoffs,
+  compounds = compounds,
+  timepoint_use = OF_timepoints,
+  group = unique(OF$group)
+)
+
+# Calculate for all cutoff-compound-timepoint combinations
+BR_ss <- purrr::pmap_dfr(param_grid, ~ make_calculations(dataset=BR, cutoff = ..1, compound = as.character(..2), timepoint_use = ..3, group = ..4))
+
+BR_ss
+```
+```{r}
+plot_cutoffs(dataset=BR_ss, 
+             timepoint_use_variable=BR$timepoint, 
+             tissue="Breath", 
+             cpd="thc")
+```
+
+Breath testing for THC, even at a high cutoff (10 ng/mL), provides high specificity but very low sensitivity. Although sensitivity is low, the high specificity suggests that any positive THC detection in breath is almost certainly accurate. This may be beneficial in contexts where even rare positive detections could be useful, but it also implies that many THC-positive individuals might not be detected.
+
+Based on all our analysis so far, we can draw a conclusion that using THC in oral fluids at a cutoff of 5 ng/mL is the best biomarker for recent cannabis use. However, we want to dive deeper into this 
+
+#### Cutoffs by User Types
+Now that we have established THC in oral fluid as our chosen compound, we want to extend our analysis to see if the cutoffs should be different for frequent vs. occasional users. To do so, we will re-generate our sensitivity and specificity graphs for either groups.
+
+First, let's look at occasional users:
+```{r occasional}
+occasional <- OF_ss |> filter(group=="Not experienced user") 
+plot_cutoffs(dataset=occasional, 
+             timepoint_use_variable=OF$timepoint, 
+             tissue="Oral Fluid", 
+             cpd="thc")
+```
+
+Now, let's look at frequent users:
+```{r frequent}
+frequent <- OF_ss |> filter(group=="Experienced user") 
+plot_cutoffs(dataset=frequent, 
+             timepoint_use_variable=OF$timepoint, 
+             tissue="Oral Fluid", 
+             cpd="thc")
+```
+
+After generating the sensitivity and specificity graphs for frequent and occasional users, we observe that the graphs show no obvious relationship between the two groups, this could suggest that usage frequency does not significantly impact the cutoff performance (sensitivity and specificity) across different time windows.This suggests a single universal cutoff threshold (e.g., 5 ng/mL) might be sufficient to detect recent use effectively for both groups.However, on the other hand, if no relationship is apparent, it might suggest that other factors (such as dosage, time since last use etc.) could provide better differentiation between frequent and occasional users.
+Further analysis could explore if combining measurements from multiple matrices (e.g., both oral fluid and blood) provides a clearer distinction in detection profiles based on frequency.
+
+## Results & Discussion 
+
+
+
+
+## Conclusion
+
+

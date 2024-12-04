@@ -1,0 +1,950 @@
+ID,Treatment,Group,Fluid,Timepoint,THC (pg/pad),time.from.start
+11255,5.90%,Not experienced user,BR,T1,0,-26
+11255,5.90%,Not experienced user,BR,T2A,32637.2,22
+11255,5.90%,Not experienced user,BR,T3A,0,117
+11255,5.90%,Not experienced user,BR,T4A,0,251
+11255,5.90%,Not experienced user,BR,T5A,0,316
+T0686,5.90%,Experienced user,BR,T1,0,-2
+T0686,5.90%,Experienced user,BR,T2A,54861.3,24
+T0686,5.90%,Experienced user,BR,T3A,1254.5,112
+T0686,5.90%,Experienced user,BR,T4A,0,224
+T0686,5.90%,Experienced user,BR,T5A,263.1,286
+11258,13.40%,Experienced user,BR,T1,0,-23
+11258,13.40%,Experienced user,BR,T2A,137975.3,22
+11258,13.40%,Experienced user,BR,T3A,0,135
+11258,13.40%,Experienced user,BR,T4A,0,253
+11258,13.40%,Experienced user,BR,T5A,0,324
+11264,13.40%,Experienced user,BR,T1,241.5,-27
+11264,13.40%,Experienced user,BR,T2A,88594.9,15
+11264,13.40%,Experienced user,BR,T3A,436.9,95
+11264,13.40%,Experienced user,BR,T4A,600.2,219
+11264,13.40%,Experienced user,BR,T5A,445,285
+11263,5.90%,Experienced user,BR,T1,0,-23
+11263,5.90%,Experienced user,BR,T2A,107985.2,22
+11263,5.90%,Experienced user,BR,T3A,0,100
+11263,5.90%,Experienced user,BR,T4A,0,213
+11263,5.90%,Experienced user,BR,T5A,0,282
+T0316,13.40%,Not experienced user,BR,T1,0,-75
+T0316,13.40%,Not experienced user,BR,T2A,320001,17
+T0316,13.40%,Not experienced user,BR,T3A,0,96
+T0316,13.40%,Not experienced user,BR,T4A,0,196
+T0316,13.40%,Not experienced user,BR,T5A,0,256
+11270,Placebo,Experienced user,BR,T1,0,-87
+11270,Placebo,Experienced user,BR,T2A,121.6,23
+11270,Placebo,Experienced user,BR,T3A,0,102
+11270,Placebo,Experienced user,BR,T4A,0,237
+11270,Placebo,Experienced user,BR,T5A,0,331
+11234,Placebo,Experienced user,BR,T1,0,-74
+11234,Placebo,Experienced user,BR,T2A,1767.7,13
+11234,Placebo,Experienced user,BR,T3A,0,86
+11234,Placebo,Experienced user,BR,T4A,0,211
+11234,Placebo,Experienced user,BR,T5A,0,280
+11323,Placebo,Not experienced user,BR,T1,0,-64
+11323,Placebo,Not experienced user,BR,T2A,2088.7,16
+11323,Placebo,Not experienced user,BR,T3A,0,117
+11323,Placebo,Not experienced user,BR,T4A,0,224
+11323,Placebo,Not experienced user,BR,T5A,0,294
+10972,13.40%,Experienced user,BR,T1,0,-95
+10972,13.40%,Experienced user,BR,T2A,279297.3,14
+10972,13.40%,Experienced user,BR,T3A,112.1,90
+10972,13.40%,Experienced user,BR,T4A,0,208
+10972,13.40%,Experienced user,BR,T5A,0,275
+11315,Placebo,Experienced user,BR,T1,0,-81
+11315,Placebo,Experienced user,BR,T2A,424.5,13
+11315,Placebo,Experienced user,BR,T3A,0,92
+11315,Placebo,Experienced user,BR,T4A,0,221
+11315,Placebo,Experienced user,BR,T5A,0,293
+11324,13.40%,Experienced user,BR,T1,0,-66
+11324,13.40%,Experienced user,BR,T2A,163496.7,24
+11324,13.40%,Experienced user,BR,T3A,121.2,110
+11324,13.40%,Experienced user,BR,T4A,0,239
+11324,13.40%,Experienced user,BR,T5A,0,310
+11350,5.90%,Not experienced user,BR,T1,0,-60
+11350,5.90%,Not experienced user,BR,T2A,137261.3,37
+11350,5.90%,Not experienced user,BR,T3A,0,88
+11350,5.90%,Not experienced user,BR,T4A,0,219
+11350,5.90%,Not experienced user,BR,T5A,0,276
+11357,5.90%,Experienced user,BR,T1,0,-69
+11357,5.90%,Experienced user,BR,T2A,320001,18
+11357,5.90%,Experienced user,BR,T3A,787.2,107
+11357,5.90%,Experienced user,BR,T4A,0,243
+11357,5.90%,Experienced user,BR,T5A,0,311
+11382,13.40%,Experienced user,BR,T1,0,-67
+11382,13.40%,Experienced user,BR,T2A,209977,17
+11382,13.40%,Experienced user,BR,T3A,0,97
+11382,13.40%,Experienced user,BR,T4A,0,219
+11382,13.40%,Experienced user,BR,T5A,196.1,273
+11349,13.40%,Experienced user,BR,T1,0,-61
+11349,13.40%,Experienced user,BR,T2A,122418.5,27
+11349,13.40%,Experienced user,BR,T3A,122,108
+11349,13.40%,Experienced user,BR,T4A,0,228
+11349,13.40%,Experienced user,BR,T5A,0,289
+11386,5.90%,Not experienced user,BR,T1,0,-59
+11386,5.90%,Not experienced user,BR,T2A,34253.7,14
+T0260,5.90%,Experienced user,BR,T1,0,-118
+T0260,5.90%,Experienced user,BR,T2A,140587.2,14
+T0260,5.90%,Experienced user,BR,T3A,0,105
+T0260,5.90%,Experienced user,BR,T4A,152,221
+T0260,5.90%,Experienced user,BR,T5A,0,278
+11367,Placebo,Experienced user,BR,T1,0,-81
+11367,Placebo,Experienced user,BR,T2A,353,7
+11367,Placebo,Experienced user,BR,T3A,0,83
+11367,Placebo,Experienced user,BR,T4A,0,201
+11367,Placebo,Experienced user,BR,T5A,0,263
+11383,Placebo,Experienced user,BR,T1,0,-63
+11383,Placebo,Experienced user,BR,T2A,496.4,19
+11383,Placebo,Experienced user,BR,T3A,0,100
+11383,Placebo,Experienced user,BR,T4A,0,225
+11383,Placebo,Experienced user,BR,T5A,0,294
+11369,5.90%,Experienced user,BR,T1,0,-65
+11369,5.90%,Experienced user,BR,T2A,36835.3,26
+11369,5.90%,Experienced user,BR,T3A,0,110
+11369,5.90%,Experienced user,BR,T4A,620.3,236
+11369,5.90%,Experienced user,BR,T5A,217.8,295
+11391,Placebo,Experienced user,BR,T1,0,-59
+11391,Placebo,Experienced user,BR,T2A,218.5,17
+11391,Placebo,Experienced user,BR,T3A,0,88
+11391,Placebo,Experienced user,BR,T4A,0,213
+11391,Placebo,Experienced user,BR,T5A,185.6,272
+11368,Placebo,Experienced user,BR,T1,0,-60
+11368,Placebo,Experienced user,BR,T2A,0,20
+11368,Placebo,Experienced user,BR,T3A,0,90
+11368,Placebo,Experienced user,BR,T4A,0,210
+11368,Placebo,Experienced user,BR,T5A,0,278
+11405,13.40%,Experienced user,BR,T1,208.8,-61
+11405,13.40%,Experienced user,BR,T2A,659.3,23
+11405,13.40%,Experienced user,BR,T3A,0,112
+11405,13.40%,Experienced user,BR,T4A,132,223
+11405,13.40%,Experienced user,BR,T5A,154.4,290
+11442,Placebo,Not experienced user,BR,T1,0,-58
+11442,Placebo,Not experienced user,BR,T2A,0,21
+11442,Placebo,Not experienced user,BR,T3A,0,99
+11442,Placebo,Not experienced user,BR,T4A,0,221
+11442,Placebo,Not experienced user,BR,T5A,0,283
+11399,13.40%,Not experienced user,BR,T1,0,-58
+11399,13.40%,Not experienced user,BR,T2A,56564.2,18
+11399,13.40%,Not experienced user,BR,T3A,483.2,85
+11399,13.40%,Not experienced user,BR,T4A,253.9,218
+11399,13.40%,Not experienced user,BR,T5A,0,277
+11395,Placebo,Not experienced user,BR,T1,0,-59
+11395,Placebo,Not experienced user,BR,T2A,0,19
+11395,Placebo,Not experienced user,BR,T3A,0,99
+11395,Placebo,Not experienced user,BR,T4A,0,217
+11395,Placebo,Not experienced user,BR,T5A,0,280
+10400,13.40%,Not experienced user,BR,T1,0,-56
+10400,13.40%,Not experienced user,BR,T2A,870.1,23
+10400,13.40%,Not experienced user,BR,T3A,0,103
+10400,13.40%,Not experienced user,BR,T4A,0,215
+10400,13.40%,Not experienced user,BR,T5A,0,282
+11429,Placebo,Not experienced user,BR,T1,0,-67
+11429,Placebo,Not experienced user,BR,T2A,0,25
+11429,Placebo,Not experienced user,BR,T3A,0,106
+11429,Placebo,Not experienced user,BR,T4A,0,231
+11429,Placebo,Not experienced user,BR,T5A,0,297
+11401,13.40%,Experienced user,BR,T1,0,-57
+11401,13.40%,Experienced user,BR,T2A,321.9,27
+11401,13.40%,Experienced user,BR,T3A,105.5,100
+11401,13.40%,Experienced user,BR,T4A,0,218
+11401,13.40%,Experienced user,BR,T5A,0,281
+11441,Placebo,Experienced user,BR,T1,0,-87
+11441,Placebo,Experienced user,BR,T2A,0,22
+11441,Placebo,Experienced user,BR,T3A,0,92
+11441,Placebo,Experienced user,BR,T4A,0,207
+11441,Placebo,Experienced user,BR,T5A,0,269
+11411,5.90%,Experienced user,BR,T1,0,-55
+11411,5.90%,Experienced user,BR,T2A,84820.8,14
+11411,5.90%,Experienced user,BR,T3A,0,86
+11411,5.90%,Experienced user,BR,T4A,0,194
+11411,5.90%,Experienced user,BR,T5A,108.4,247
+11467,5.90%,Not experienced user,BR,T1,0,-56
+11467,5.90%,Not experienced user,BR,T2A,1683.7,24
+11467,5.90%,Not experienced user,BR,T3A,0,93
+11467,5.90%,Not experienced user,BR,T4A,0,210
+11467,5.90%,Not experienced user,BR,T5A,0,265
+11400,13.40%,Experienced user,BR,T1,0,-57
+11400,13.40%,Experienced user,BR,T2A,441.1,23
+11400,13.40%,Experienced user,BR,T3A,0,96
+11400,13.40%,Experienced user,BR,T4A,0,211
+11400,13.40%,Experienced user,BR,T5A,0,281
+11474,Placebo,Not experienced user,BR,T1,0,-65
+11474,Placebo,Not experienced user,BR,T2A,0,21
+11474,Placebo,Not experienced user,BR,T3A,0,87
+11474,Placebo,Not experienced user,BR,T4A,0,211
+11474,Placebo,Not experienced user,BR,T5A,0,274
+11465,13.40%,Not experienced user,BR,T1,0,-63
+11465,13.40%,Not experienced user,BR,T2A,254.3,19
+11465,13.40%,Not experienced user,BR,T3A,0,86
+11465,13.40%,Not experienced user,BR,T4A,0,199
+11465,13.40%,Not experienced user,BR,T5A,0,260
+11473,5.90%,Not experienced user,BR,T1,0,-62
+11473,5.90%,Not experienced user,BR,T2A,552.2,22
+11473,5.90%,Not experienced user,BR,T3A,0,92
+11473,5.90%,Not experienced user,BR,T4A,0,214
+11473,5.90%,Not experienced user,BR,T5A,0,272
+11475,Placebo,Experienced user,BR,T1,0,-92
+11475,Placebo,Experienced user,BR,T2A,0,11
+11475,Placebo,Experienced user,BR,T3A,0,76
+11475,Placebo,Experienced user,BR,T4A,0,193
+11475,Placebo,Experienced user,BR,T5A,0,252
+11396,13.40%,Not experienced user,BR,T1,0,-54
+11396,13.40%,Not experienced user,BR,T2A,2972.4,24
+11396,13.40%,Not experienced user,BR,T3A,112.8,88
+11396,13.40%,Not experienced user,BR,T4A,0,204
+11396,13.40%,Not experienced user,BR,T5A,0,260
+11453,Placebo,Not experienced user,BR,T1,0,-57
+11453,Placebo,Not experienced user,BR,T2A,0,18
+11453,Placebo,Not experienced user,BR,T3A,0,84
+11453,Placebo,Not experienced user,BR,T4A,0,190
+11453,Placebo,Not experienced user,BR,T5A,0,244
+11519,5.90%,Experienced user,BR,T1,0,-61
+11519,5.90%,Experienced user,BR,T2A,2745.2,24
+11519,5.90%,Experienced user,BR,T3A,0,90
+11519,5.90%,Experienced user,BR,T4A,0,202
+11519,5.90%,Experienced user,BR,T5A,0,261
+11522,5.90%,Experienced user,BR,T1,0,-51
+11522,5.90%,Experienced user,BR,T2A,4578.7,19
+11522,5.90%,Experienced user,BR,T3A,85.8,85
+11522,5.90%,Experienced user,BR,T4A,0,183
+11522,5.90%,Experienced user,BR,T5A,0,236
+11338,13.40%,Experienced user,BR,T1,0,-57
+11338,13.40%,Experienced user,BR,T2A,2107.2,24
+11338,13.40%,Experienced user,BR,T3A,0,92
+11338,13.40%,Experienced user,BR,T4A,0,189
+11338,13.40%,Experienced user,BR,T5A,0,244
+11464,5.90%,Not experienced user,BR,T1,0,-58
+11464,5.90%,Not experienced user,BR,T2A,2337.6,20
+11464,5.90%,Not experienced user,BR,T3A,0,95
+11464,5.90%,Not experienced user,BR,T4A,0,208
+11464,5.90%,Not experienced user,BR,T5A,0,274
+11459,13.40%,Not experienced user,BR,T1,0,-55
+11459,13.40%,Not experienced user,BR,T2A,3109.5,22
+11459,13.40%,Not experienced user,BR,T3A,0,91
+11459,13.40%,Not experienced user,BR,T4A,0,198
+11459,13.40%,Not experienced user,BR,T5A,0,258
+11539,Placebo,Experienced user,BR,T1,0,-66
+11539,Placebo,Experienced user,BR,T2A,0,19
+11539,Placebo,Experienced user,BR,T3A,0,86
+11539,Placebo,Experienced user,BR,T4A,0,194
+11539,Placebo,Experienced user,BR,T5A,0,252
+11508,Placebo,Experienced user,BR,T1,0,-60
+11508,Placebo,Experienced user,BR,T2A,0,12
+11508,Placebo,Experienced user,BR,T3A,0,83
+11508,Placebo,Experienced user,BR,T4A,0,181
+11508,Placebo,Experienced user,BR,T5A,0,240
+11543,5.90%,Experienced user,BR,T1,0,-57
+11543,5.90%,Experienced user,BR,T2A,7043.5,18
+11543,5.90%,Experienced user,BR,T3A,284.8,93
+11543,5.90%,Experienced user,BR,T4A,80.1,217
+11543,5.90%,Experienced user,BR,T5A,0,277
+11517,Placebo,Experienced user,BR,T1,122.6,-58
+11517,Placebo,Experienced user,BR,T2A,0,12
+11517,Placebo,Experienced user,BR,T3A,0,74
+11517,Placebo,Experienced user,BR,T4A,0,179
+11517,Placebo,Experienced user,BR,T5A,0,259
+11562,13.40%,Not experienced user,BR,T1,0,-60
+11562,13.40%,Not experienced user,BR,T2A,9134.1,21
+11562,13.40%,Not experienced user,BR,T3A,12210.1,92
+11562,13.40%,Not experienced user,BR,T4A,102.3,194
+11562,13.40%,Not experienced user,BR,T5A,0,252
+11548,5.90%,Not experienced user,BR,T1,0,-59
+11548,5.90%,Not experienced user,BR,T2A,2780.4,18
+11548,5.90%,Not experienced user,BR,T3A,0,84
+11548,5.90%,Not experienced user,BR,T4A,0,192
+11548,5.90%,Not experienced user,BR,T5A,0,246
+11529,13.40%,Experienced user,BR,T1,0,-69
+11529,13.40%,Experienced user,BR,T2A,513,21
+11529,13.40%,Experienced user,BR,T3A,0,91
+11529,13.40%,Experienced user,BR,T4A,0,209
+11529,13.40%,Experienced user,BR,T5A,0,268
+11558,Placebo,Not experienced user,BR,T1,0,-102
+11558,Placebo,Not experienced user,BR,T2A,93.6,19
+11558,Placebo,Not experienced user,BR,T3A,0,95
+11558,Placebo,Not experienced user,BR,T4A,0,212
+11558,Placebo,Not experienced user,BR,T5A,0,278
+11484,5.90%,Experienced user,BR,T1,0,-94
+11484,5.90%,Experienced user,BR,T2A,2747.4,23
+11484,5.90%,Experienced user,BR,T3A,0,104
+11484,5.90%,Experienced user,BR,T4A,0,220
+11484,5.90%,Experienced user,BR,T5A,0,278
+11555,Placebo,Not experienced user,BR,T1,0,-65
+11555,Placebo,Not experienced user,BR,T2A,0,18
+11555,Placebo,Not experienced user,BR,T3A,0,93
+11555,Placebo,Not experienced user,BR,T4A,0,185
+11555,Placebo,Not experienced user,BR,T5A,0,239
+11576,5.90%,Experienced user,BR,T1,0,-54
+11576,5.90%,Experienced user,BR,T2A,2490.2,21
+11576,5.90%,Experienced user,BR,T3A,250.5,85
+11576,5.90%,Experienced user,BR,T4A,130.6,202
+11576,5.90%,Experienced user,BR,T5A,0,257
+11585,Placebo,Experienced user,BR,T1,0,-63
+11585,Placebo,Experienced user,BR,T2A,0,16
+11585,Placebo,Experienced user,BR,T3A,0,82
+11585,Placebo,Experienced user,BR,T4A,0,188
+11585,Placebo,Experienced user,BR,T5A,0,239
+11575,5.90%,Not experienced user,BR,T1,0,-54
+11575,5.90%,Not experienced user,BR,T2A,0,21
+11575,5.90%,Not experienced user,BR,T3A,0,88
+11575,5.90%,Not experienced user,BR,T4A,0,214
+11575,5.90%,Not experienced user,BR,T5A,0,276
+11525,13.40%,Experienced user,BR,T1,0,-58
+11525,13.40%,Experienced user,BR,T2A,1245.1,24
+11525,13.40%,Experienced user,BR,T3A,0,87
+11525,13.40%,Experienced user,BR,T4A,0,196
+11525,13.40%,Experienced user,BR,T5A,0,253
+11619,5.90%,Experienced user,BR,T1,0,-55
+11619,5.90%,Experienced user,BR,T2A,0,57
+11619,5.90%,Experienced user,BR,T3A,0,106
+11619,5.90%,Experienced user,BR,T4A,0,253
+11619,5.90%,Experienced user,BR,T5A,0,305
+11591,13.40%,Experienced user,BR,T1,0,-64
+11591,13.40%,Experienced user,BR,T2A,528.4,21
+11591,13.40%,Experienced user,BR,T3A,0,93
+11591,13.40%,Experienced user,BR,T4A,0,211
+11591,13.40%,Experienced user,BR,T5A,0,274
+11599,5.90%,Not experienced user,BR,T1,0,-55
+11599,5.90%,Not experienced user,BR,T2A,17203.3,20
+11599,5.90%,Not experienced user,BR,T3A,105.4,97
+11599,5.90%,Not experienced user,BR,T4A,0,216
+11599,5.90%,Not experienced user,BR,T5A,0,288
+11645,13.40%,Experienced user,BR,T1,0,-57
+11645,13.40%,Experienced user,BR,T2A,65364.6,14
+11645,13.40%,Experienced user,BR,T3A,85.6,90
+11645,13.40%,Experienced user,BR,T4A,3558.5,209
+11645,13.40%,Experienced user,BR,T5A,801.8,272
+11647,5.90%,Experienced user,BR,T1,0,-71
+11647,5.90%,Experienced user,BR,T2A,5826.5,23
+11647,5.90%,Experienced user,BR,T3A,0,109
+11647,5.90%,Experienced user,BR,T4A,0,241
+11647,5.90%,Experienced user,BR,T5A,0,306
+11626,Placebo,Experienced user,BR,T1,0,-64
+11626,Placebo,Experienced user,BR,T2A,0,16
+11626,Placebo,Experienced user,BR,T3A,0,94
+11626,Placebo,Experienced user,BR,T4A,0,217
+11626,Placebo,Experienced user,BR,T5A,0,282
+11592,13.40%,Experienced user,BR,T1,0,-60
+11592,13.40%,Experienced user,BR,T2A,566.8,18
+11592,13.40%,Experienced user,BR,T3A,0,94
+11592,13.40%,Experienced user,BR,T4A,0,209
+11592,13.40%,Experienced user,BR,T5A,0,281
+11655,Placebo,Not experienced user,BR,T1,0,-66
+11655,Placebo,Not experienced user,BR,T2A,0,22
+11655,Placebo,Not experienced user,BR,T3A,0,94
+11655,Placebo,Not experienced user,BR,T4A,0,211
+11655,Placebo,Not experienced user,BR,T5A,0,275
+11639,13.40%,Experienced user,BR,T1,0,-53
+11639,13.40%,Experienced user,BR,T2A,2120.5,20
+11639,13.40%,Experienced user,BR,T3A,0,85
+11639,13.40%,Experienced user,BR,T4A,0,187
+11639,13.40%,Experienced user,BR,T5A,0,258
+11637,Placebo,Experienced user,BR,T1,0,-58
+11637,Placebo,Experienced user,BR,T2A,0,15
+11637,Placebo,Experienced user,BR,T3A,0,80
+11637,Placebo,Experienced user,BR,T4A,0,199
+11637,Placebo,Experienced user,BR,T5A,0,258
+11669,5.90%,Experienced user,BR,T1,0,-55
+11669,5.90%,Experienced user,BR,T2A,89.9,22
+11669,5.90%,Experienced user,BR,T3A,0,102
+11669,5.90%,Experienced user,BR,T4A,0,205
+11669,5.90%,Experienced user,BR,T5A,0,270
+11640,5.90%,Not experienced user,BR,T1,0,-57
+11640,5.90%,Not experienced user,BR,T2A,7330.8,14
+11640,5.90%,Not experienced user,BR,T3A,0,75
+11640,5.90%,Not experienced user,BR,T4A,0,181
+11640,5.90%,Not experienced user,BR,T5A,0,233
+11638,13.40%,Experienced user,BR,T1,0,-54
+11638,13.40%,Experienced user,BR,T2A,5043.3,13
+11638,13.40%,Experienced user,BR,T3A,0,77
+11638,13.40%,Experienced user,BR,T4A,0,181
+11638,13.40%,Experienced user,BR,T5A,0,242
+11654,13.40%,Experienced user,BR,T1,0,-56
+11654,13.40%,Experienced user,BR,T2A,202.2,56
+11654,13.40%,Experienced user,BR,T3A,0,116
+11654,13.40%,Experienced user,BR,T4A,0,231
+11654,13.40%,Experienced user,BR,T5A,0,281
+11652,5.90%,Experienced user,BR,T1,0,-59
+11652,5.90%,Experienced user,BR,T2A,613.9,28
+11652,5.90%,Experienced user,BR,T3A,0,121
+11652,5.90%,Experienced user,BR,T4A,0,247
+11652,5.90%,Experienced user,BR,T5A,0,308
+11711,13.40%,Experienced user,BR,T1,0,-68
+11711,13.40%,Experienced user,BR,T2A,1412.8,22
+11711,13.40%,Experienced user,BR,T3A,0,88
+11711,13.40%,Experienced user,BR,T4A,0,193
+11711,13.40%,Experienced user,BR,T5A,0,251
+11712,Placebo,Experienced user,BR,T1,135.9,-49
+11712,Placebo,Experienced user,BR,T2A,115.9,16
+11712,Placebo,Experienced user,BR,T3A,0,86
+11712,Placebo,Experienced user,BR,T4A,0,197
+11712,Placebo,Experienced user,BR,T5A,0,255
+11644,13.40%,Experienced user,BR,T1,0,-56
+11644,13.40%,Experienced user,BR,T2A,4254.6,23
+11644,13.40%,Experienced user,BR,T3A,0,80
+11644,13.40%,Experienced user,BR,T4A,0,174
+11644,13.40%,Experienced user,BR,T5A,0,225
+11697,5.90%,Experienced user,BR,T1,0,-58
+11697,5.90%,Experienced user,BR,T2A,7941,27
+11697,5.90%,Experienced user,BR,T3A,106.9,94
+11697,5.90%,Experienced user,BR,T4A,0,201
+11697,5.90%,Experienced user,BR,T5A,0,260
+11627,5.90%,Not experienced user,BR,T1,0,-61
+11627,5.90%,Not experienced user,BR,T2A,1031.1,19
+11627,5.90%,Not experienced user,BR,T3A,0,78
+11627,5.90%,Not experienced user,BR,T4A,0,174
+11627,5.90%,Not experienced user,BR,T5A,0,220
+11690,13.40%,Not experienced user,BR,T1,0,-55
+11690,13.40%,Not experienced user,BR,T2A,3339.3,24
+11690,13.40%,Not experienced user,BR,T3A,0,97
+11690,13.40%,Not experienced user,BR,T4A,0,215
+11690,13.40%,Not experienced user,BR,T5A,0,275
+11730,Placebo,Not experienced user,BR,T1,0,-63
+11730,Placebo,Not experienced user,BR,T2A,0,14
+11730,Placebo,Not experienced user,BR,T3A,0,87
+11730,Placebo,Not experienced user,BR,T4A,0,200
+11730,Placebo,Not experienced user,BR,T5A,0,264
+11685,Placebo,Not experienced user,BR,T1,0,-73
+11685,Placebo,Not experienced user,BR,T2A,0,14
+11685,Placebo,Not experienced user,BR,T3A,0,73
+11685,Placebo,Not experienced user,BR,T4A,0,188
+11685,Placebo,Not experienced user,BR,T5A,0,249
+11698,5.90%,Experienced user,BR,T1,0,-64
+11698,5.90%,Experienced user,BR,T2A,2766.6,28
+11698,5.90%,Experienced user,BR,T3A,119,100
+11698,5.90%,Experienced user,BR,T4A,0,205
+11698,5.90%,Experienced user,BR,T5A,0,264
+11721,Placebo,Experienced user,BR,T1,0,-59
+11721,Placebo,Experienced user,BR,T2A,0,19
+11721,Placebo,Experienced user,BR,T3A,0,83
+11721,Placebo,Experienced user,BR,T4A,0,175
+11721,Placebo,Experienced user,BR,T5A,0,238
+11740,13.40%,Not experienced user,BR,T1,0,-69
+11740,13.40%,Not experienced user,BR,T2A,31733.4,20
+11740,13.40%,Not experienced user,BR,T3A,0,93
+11740,13.40%,Not experienced user,BR,T4A,0,207
+11740,13.40%,Not experienced user,BR,T5A,0,272
+11748,5.90%,Experienced user,BR,T1,0,-58
+11748,5.90%,Experienced user,BR,T2A,3285.5,25
+11748,5.90%,Experienced user,BR,T3A,0,111
+11748,5.90%,Experienced user,BR,T4A,0,236
+11748,5.90%,Experienced user,BR,T5A,0,293
+11720,Placebo,Experienced user,BR,T1,0,-51
+11720,Placebo,Experienced user,BR,T2A,0,15
+11720,Placebo,Experienced user,BR,T3A,0,86
+11720,Placebo,Experienced user,BR,T4A,0,199
+11720,Placebo,Experienced user,BR,T5A,0,253
+11681,Placebo,Experienced user,BR,T1,0,-62
+11681,Placebo,Experienced user,BR,T2A,0,18
+11681,Placebo,Experienced user,BR,T3A,0,95
+11681,Placebo,Experienced user,BR,T4A,0,202
+11681,Placebo,Experienced user,BR,T5A,0,278
+11743,13.40%,Experienced user,BR,T1,0,-62
+11743,13.40%,Experienced user,BR,T2A,12633.2,22
+11743,13.40%,Experienced user,BR,T3A,169.6,93
+11743,13.40%,Experienced user,BR,T4A,0,212
+11743,13.40%,Experienced user,BR,T5A,0,270
+11753,13.40%,Not experienced user,BR,T1,0,-84
+11753,13.40%,Not experienced user,BR,T2A,7503.3,16
+11753,13.40%,Not experienced user,BR,T3A,0,92
+11753,13.40%,Not experienced user,BR,T4A,0,208
+11753,13.40%,Not experienced user,BR,T5A,552.4,260
+11780,Placebo,Experienced user,BR,T1,0,-60
+11780,Placebo,Experienced user,BR,T2A,0,14
+11780,Placebo,Experienced user,BR,T3A,0,76
+11780,Placebo,Experienced user,BR,T4A,0,175
+11780,Placebo,Experienced user,BR,T5A,119,239
+11747,13.40%,Not experienced user,BR,T1,0,-82
+11747,13.40%,Not experienced user,BR,T2A,943.5,21
+11747,13.40%,Not experienced user,BR,T3A,0,92
+11747,13.40%,Not experienced user,BR,T4A,0,214
+11747,13.40%,Not experienced user,BR,T5A,0,286
+11778,13.40%,Not experienced user,BR,T1,0,-71
+11778,13.40%,Not experienced user,BR,T2A,524.4,16
+11778,13.40%,Not experienced user,BR,T3A,0,87
+11778,13.40%,Not experienced user,BR,T4A,0,212
+11778,13.40%,Not experienced user,BR,T5A,0,274
+11782,5.90%,Experienced user,BR,T1,0,-72
+11782,5.90%,Experienced user,BR,T2A,380.7,27
+11782,5.90%,Experienced user,BR,T3A,0,100
+11782,5.90%,Experienced user,BR,T4A,0,199
+11782,5.90%,Experienced user,BR,T5A,0,252
+11781,5.90%,Not experienced user,BR,T1,0,-68
+11781,5.90%,Not experienced user,BR,T2A,19329.8,8
+11781,5.90%,Not experienced user,BR,T3A,110.5,81
+11781,5.90%,Not experienced user,BR,T4A,82.6,199
+11781,5.90%,Not experienced user,BR,T5A,0,257
+11717,Placebo,Not experienced user,BR,T1,0,-66
+11717,Placebo,Not experienced user,BR,T2A,0,26
+11717,Placebo,Not experienced user,BR,T3A,0,100
+11717,Placebo,Not experienced user,BR,T4A,0,224
+11717,Placebo,Not experienced user,BR,T5A,0,288
+11821,Placebo,Not experienced user,BR,T1,0,-57
+11821,Placebo,Not experienced user,BR,T2A,0,20
+11821,Placebo,Not experienced user,BR,T3A,0,93
+11821,Placebo,Not experienced user,BR,T4A,0,237
+11821,Placebo,Not experienced user,BR,T5A,0,293
+11772,13.40%,Experienced user,BR,T1,0,-50
+11772,13.40%,Experienced user,BR,T2A,3649.5,23
+11772,13.40%,Experienced user,BR,T3A,105.9,92
+11772,13.40%,Experienced user,BR,T4A,0,208
+11772,13.40%,Experienced user,BR,T5A,0,266
+11827,13.40%,Not experienced user,BR,T1,0,-57
+11827,13.40%,Not experienced user,BR,T2A,3395.2,21
+11827,13.40%,Not experienced user,BR,T3A,0,98
+11827,13.40%,Not experienced user,BR,T4A,0,216
+11827,13.40%,Not experienced user,BR,T5A,0,284
+11826,Placebo,Not experienced user,BR,T1,0,-69
+11826,Placebo,Not experienced user,BR,T2A,0,14
+11826,Placebo,Not experienced user,BR,T3A,0,87
+11826,Placebo,Not experienced user,BR,T4A,0,222
+11826,Placebo,Not experienced user,BR,T5A,0,278
+11828,5.90%,Experienced user,BR,T1,0,-57
+11828,5.90%,Experienced user,BR,T2A,1123.3,28
+11828,5.90%,Experienced user,BR,T3A,538.7,147
+11828,5.90%,Experienced user,BR,T4A,451.7,245
+11828,5.90%,Experienced user,BR,T5A,0,306
+11816,13.40%,Not experienced user,BR,T1,0,-62
+11816,13.40%,Not experienced user,BR,T2A,914.7,25
+11816,13.40%,Not experienced user,BR,T3A,0,94
+11816,13.40%,Not experienced user,BR,T4A,0,172
+11816,13.40%,Not experienced user,BR,T5A,0,238
+19764,5.90%,Experienced user,BR,T1,0,-59
+19764,5.90%,Experienced user,BR,T2A,2651.2,25
+19764,5.90%,Experienced user,BR,T3A,104.9,91
+19764,5.90%,Experienced user,BR,T4A,0,201
+19764,5.90%,Experienced user,BR,T5A,0,261
+11822,5.90%,Not experienced user,BR,T1,0,-52
+11822,5.90%,Not experienced user,BR,T2A,1555.5,26
+11822,5.90%,Not experienced user,BR,T3A,214.5,96
+11822,5.90%,Not experienced user,BR,T4A,138.8,211
+11822,5.90%,Not experienced user,BR,T5A,0,275
+11739,Placebo,Experienced user,BR,T1,0,-57
+11739,Placebo,Experienced user,BR,T2A,0,26
+11739,Placebo,Experienced user,BR,T3A,0,96
+11739,Placebo,Experienced user,BR,T4A,0,222
+11739,Placebo,Experienced user,BR,T5A,206.1,278
+11831,5.90%,Not experienced user,BR,T1,0,-53
+11831,5.90%,Not experienced user,BR,T2A,5164.4,22
+11831,5.90%,Not experienced user,BR,T3A,0,87
+11831,5.90%,Not experienced user,BR,T4A,0,207
+11831,5.90%,Not experienced user,BR,T5A,0,263
+11835,Placebo,Not experienced user,BR,T1,0,-51
+11835,Placebo,Not experienced user,BR,T2A,298.1,16
+11835,Placebo,Not experienced user,BR,T3A,0,82
+11835,Placebo,Not experienced user,BR,T4A,0,194
+11835,Placebo,Not experienced user,BR,T5A,0,249
+19795,5.90%,Not experienced user,BR,T1,0,-53
+19795,5.90%,Not experienced user,BR,T2A,3224.8,21
+19795,5.90%,Not experienced user,BR,T3A,0,109
+19795,5.90%,Not experienced user,BR,T4A,0,213
+19795,5.90%,Not experienced user,BR,T5A,0,289
+11683,Placebo,Not experienced user,BR,T1,0,-81
+11683,Placebo,Not experienced user,BR,T2A,0,17
+11683,Placebo,Not experienced user,BR,T3A,0,84
+11683,Placebo,Not experienced user,BR,T4A,0,192
+11683,Placebo,Not experienced user,BR,T5A,0,306
+11783,5.90%,Experienced user,BR,T1,0,-54
+11783,5.90%,Experienced user,BR,T2A,3863.5,25
+11783,5.90%,Experienced user,BR,T3A,0,106
+11783,5.90%,Experienced user,BR,T4A,0,226
+11783,5.90%,Experienced user,BR,T5A,706.2,302
+19801,Placebo,Experienced user,BR,T1,0,-51
+19801,Placebo,Experienced user,BR,T2A,96.8,16
+19801,Placebo,Experienced user,BR,T3A,0,78
+19801,Placebo,Experienced user,BR,T4A,0,194
+19801,Placebo,Experienced user,BR,T5A,0,255
+19788,13.40%,Not experienced user,BR,T1,0,-49
+19788,13.40%,Not experienced user,BR,T2A,9353.4,26
+19788,13.40%,Not experienced user,BR,T3A,5704.7,87
+19788,13.40%,Not experienced user,BR,T4A,0,192
+19788,13.40%,Not experienced user,BR,T5A,0,246
+19820,5.90%,Not experienced user,BR,T1,0,-54
+19820,5.90%,Not experienced user,BR,T2A,157404.3,16
+19820,5.90%,Not experienced user,BR,T3A,0,91
+19820,5.90%,Not experienced user,BR,T4A,0,204
+19820,5.90%,Not experienced user,BR,T5A,0,265
+19822,13.40%,Experienced user,BR,T1,0,-67
+19822,13.40%,Experienced user,BR,T2A,109,19
+19822,13.40%,Experienced user,BR,T3A,0,85
+19822,13.40%,Experienced user,BR,T4A,0,208
+19822,13.40%,Experienced user,BR,T5A,0,255
+19828,13.40%,Not experienced user,BR,T1,0,-57
+19828,13.40%,Not experienced user,BR,T2A,30489.6,15
+19828,13.40%,Not experienced user,BR,T3A,0,87
+19828,13.40%,Not experienced user,BR,T4A,0,207
+19828,13.40%,Not experienced user,BR,T5A,0,266
+19812,5.90%,Experienced user,BR,T1,0,-55
+19812,5.90%,Experienced user,BR,T2A,5411,26
+19812,5.90%,Experienced user,BR,T3A,0,100
+19812,5.90%,Experienced user,BR,T4A,0,217
+19812,5.90%,Experienced user,BR,T5A,292.8,282
+19784,5.90%,Experienced user,BR,T1,348.8,-42
+19784,5.90%,Experienced user,BR,T2A,24403.8,24
+19784,5.90%,Experienced user,BR,T3A,0,91
+19784,5.90%,Experienced user,BR,T4A,0,193
+19784,5.90%,Experienced user,BR,T5A,0,254
+19829,13.40%,Not experienced user,BR,T1,0,-54
+19829,13.40%,Not experienced user,BR,T2A,1890.2,25
+19899,13.40%,Experienced user,BR,T1,0,-61
+19899,13.40%,Experienced user,BR,T2A,35344.1,25
+19899,13.40%,Experienced user,BR,T3A,793.9,90
+19899,13.40%,Experienced user,BR,T4A,0,192
+19899,13.40%,Experienced user,BR,T5A,323.7,267
+19831,5.90%,Not experienced user,BR,T1,0,-62
+19831,5.90%,Not experienced user,BR,T2A,1705.5,19
+19831,5.90%,Not experienced user,BR,T3A,0,89
+19831,5.90%,Not experienced user,BR,T4A,0,203
+19831,5.90%,Not experienced user,BR,T5A,0,260
+19756,13.40%,Experienced user,BR,T1,0,-51
+19756,13.40%,Experienced user,BR,T2A,3280.7,20
+19756,13.40%,Experienced user,BR,T3A,0,91
+19756,13.40%,Experienced user,BR,T4A,0,212
+19756,13.40%,Experienced user,BR,T5A,0,267
+11833,Placebo,Experienced user,BR,T1,0,-70
+11833,Placebo,Experienced user,BR,T2A,0,23
+11833,Placebo,Experienced user,BR,T3A,0,90
+11833,Placebo,Experienced user,BR,T4A,0,200
+11833,Placebo,Experienced user,BR,T5A,0,261
+19885,Placebo,Not experienced user,BR,T1,0,-54
+19885,Placebo,Not experienced user,BR,T2A,0,16
+19885,Placebo,Not experienced user,BR,T3A,0,82
+19885,Placebo,Not experienced user,BR,T4A,0,171
+19885,Placebo,Not experienced user,BR,T5A,0,230
+19904,13.40%,Not experienced user,BR,T1,0,-55
+19904,13.40%,Not experienced user,BR,T2A,9333.2,16
+19904,13.40%,Not experienced user,BR,T3A,0,80
+19904,13.40%,Not experienced user,BR,T4A,0,178
+19904,13.40%,Not experienced user,BR,T5A,0,240
+19839,Placebo,Experienced user,BR,T1,0,-64
+19839,Placebo,Experienced user,BR,T2A,0,11
+19839,Placebo,Experienced user,BR,T3A,0,108
+19839,Placebo,Experienced user,BR,T4A,0,220
+19839,Placebo,Experienced user,BR,T5A,0,291
+19887,5.90%,Not experienced user,BR,T1,0,-51
+19887,5.90%,Not experienced user,BR,T2A,5038.2,23
+19887,5.90%,Not experienced user,BR,T3A,0,84
+19887,5.90%,Not experienced user,BR,T4A,0,201
+19887,5.90%,Not experienced user,BR,T5A,0,257
+19876,13.40%,Experienced user,BR,T1,0,-52
+19876,13.40%,Experienced user,BR,T2A,4043.3,26
+19876,13.40%,Experienced user,BR,T3A,0,93
+19876,13.40%,Experienced user,BR,T4A,0,193
+19876,13.40%,Experienced user,BR,T5A,0,256
+19902,Placebo,Not experienced user,BR,T1,0,-68
+19902,Placebo,Not experienced user,BR,T2A,96,15
+19902,Placebo,Not experienced user,BR,T3A,0,76
+19902,Placebo,Not experienced user,BR,T4A,0,175
+19902,Placebo,Not experienced user,BR,T5A,0,234
+19928,5.90%,Experienced user,BR,T1,0,-58
+19928,5.90%,Experienced user,BR,T2A,4963.3,25
+19928,5.90%,Experienced user,BR,T3A,0,99
+19928,5.90%,Experienced user,BR,T4A,0,214
+19928,5.90%,Experienced user,BR,T5A,0,283
+19798,5.90%,Not experienced user,BR,T1,0,-65
+19798,5.90%,Not experienced user,BR,T2A,858.8,28
+19798,5.90%,Not experienced user,BR,T3A,0,110
+19798,5.90%,Not experienced user,BR,T4A,0,238
+19798,5.90%,Not experienced user,BR,T5A,0,294
+19878,13.40%,Not experienced user,BR,T1,0,-51
+19878,13.40%,Not experienced user,BR,T2A,26013.8,28
+19878,13.40%,Not experienced user,BR,T3A,0,96
+19878,13.40%,Not experienced user,BR,T4A,158.4,221
+19878,13.40%,Not experienced user,BR,T5A,257.6,280
+19907,Placebo,Not experienced user,BR,T1,0,-61
+19907,Placebo,Not experienced user,BR,T2A,0,17
+19907,Placebo,Not experienced user,BR,T3A,0,79
+19907,Placebo,Not experienced user,BR,T4A,0,195
+19907,Placebo,Not experienced user,BR,T5A,0,253
+19914,5.90%,Not experienced user,BR,T1,0,-78
+19914,5.90%,Not experienced user,BR,T2A,6737.6,24
+19914,5.90%,Not experienced user,BR,T3A,0,103
+19914,5.90%,Not experienced user,BR,T4A,0,219
+19914,5.90%,Not experienced user,BR,T5A,0,287
+19832,Placebo,Not experienced user,BR,T1,0,-57
+19832,Placebo,Not experienced user,BR,T2A,306.3,14
+19832,Placebo,Not experienced user,BR,T3A,0,80
+19832,Placebo,Not experienced user,BR,T4A,0,194
+19832,Placebo,Not experienced user,BR,T5A,0,248
+19963,5.90%,Not experienced user,BR,T1,0,-45
+19963,5.90%,Not experienced user,BR,T2A,12628.1,23
+19963,5.90%,Not experienced user,BR,T3A,965.1,85
+19963,5.90%,Not experienced user,BR,T4A,259.6,173
+19963,5.90%,Not experienced user,BR,T5A,423.9,234
+19835,Placebo,Not experienced user,BR,T1,0,-57
+19835,Placebo,Not experienced user,BR,T2A,0,16
+19835,Placebo,Not experienced user,BR,T3A,0,84
+19835,Placebo,Not experienced user,BR,T4A,0,203
+19835,Placebo,Not experienced user,BR,T5A,0,252
+19917,13.40%,Not experienced user,BR,T1,0,-78
+19917,13.40%,Not experienced user,BR,T2A,1062.2,25
+19917,13.40%,Not experienced user,BR,T3A,145.7,86
+19917,13.40%,Not experienced user,BR,T4A,0,186
+19917,13.40%,Not experienced user,BR,T5A,0,235
+19931,5.90%,Experienced user,BR,T1,0,-52
+19931,5.90%,Experienced user,BR,T2A,568.2,24
+19931,5.90%,Experienced user,BR,T3A,0,97
+19931,5.90%,Experienced user,BR,T4A,0,214
+19931,5.90%,Experienced user,BR,T5A,0,269
+19934,Placebo,Not experienced user,BR,T1,0,-52
+19934,Placebo,Not experienced user,BR,T2A,0,20
+19934,Placebo,Not experienced user,BR,T3A,0,85
+19934,Placebo,Not experienced user,BR,T4A,0,188
+19934,Placebo,Not experienced user,BR,T5A,0,250
+19918,13.40%,Not experienced user,BR,T1,0,-52
+19918,13.40%,Not experienced user,BR,T2A,840.6,23
+19918,13.40%,Not experienced user,BR,T3A,0,79
+19918,13.40%,Not experienced user,BR,T4A,0,182
+19918,13.40%,Not experienced user,BR,T5A,0,233
+19925,Placebo,Not experienced user,BR,T1,0,-52
+19925,Placebo,Not experienced user,BR,T2A,0,22
+19925,Placebo,Not experienced user,BR,T3A,0,90
+19925,Placebo,Not experienced user,BR,T4A,0,193
+19925,Placebo,Not experienced user,BR,T5A,0,248
+19933,Placebo,Experienced user,BR,T1,0,-75
+19933,Placebo,Experienced user,BR,T2A,0,16
+19933,Placebo,Experienced user,BR,T3A,0,80
+19933,Placebo,Experienced user,BR,T4A,0,167
+19933,Placebo,Experienced user,BR,T5A,0,228
+19965,13.40%,Not experienced user,BR,T1,0,-54
+19965,13.40%,Not experienced user,BR,T2A,25228.3,14
+19965,13.40%,Not experienced user,BR,T3A,0,83
+19965,13.40%,Not experienced user,BR,T4A,0,184
+19965,13.40%,Not experienced user,BR,T5A,0,248
+19939,13.40%,Experienced user,BR,T1,0,-47
+19939,13.40%,Experienced user,BR,T2A,1672.9,23
+19939,13.40%,Experienced user,BR,T3A,228.7,92
+19939,13.40%,Experienced user,BR,T4A,0,180
+19939,13.40%,Experienced user,BR,T5A,0,241
+19986,5.90%,Not experienced user,BR,T1,243.6,-58
+19986,5.90%,Not experienced user,BR,T2A,1084.1,24
+19986,5.90%,Not experienced user,BR,T3A,201.4,84
+19986,5.90%,Not experienced user,BR,T4A,379.8,175
+19986,5.90%,Not experienced user,BR,T5A,345.4,229
+19969,13.40%,Not experienced user,BR,T1,0,-66
+19969,13.40%,Not experienced user,BR,T2A,34341.5,21
+19969,13.40%,Not experienced user,BR,T3A,0,95
+19969,13.40%,Not experienced user,BR,T4A,0,200
+19969,13.40%,Not experienced user,BR,T5A,0,262
+19950,Placebo,Not experienced user,BR,T1,0,-78
+19950,Placebo,Not experienced user,BR,T2A,0,19
+19950,Placebo,Not experienced user,BR,T3A,0,101
+19950,Placebo,Not experienced user,BR,T4A,0,224
+19950,Placebo,Not experienced user,BR,T5A,0,298
+19948,13.40%,Experienced user,BR,T1,0,-48
+19948,13.40%,Experienced user,BR,T2A,122.3,22
+19948,13.40%,Experienced user,BR,T3A,266.9,80
+19948,13.40%,Experienced user,BR,T4A,0,187
+19948,13.40%,Experienced user,BR,T5A,0,244
+19924,5.90%,Not experienced user,BR,T1,0,-46
+19924,5.90%,Not experienced user,BR,T2A,8731.7,22
+19924,5.90%,Not experienced user,BR,T3A,93.8,80
+19924,5.90%,Not experienced user,BR,T4A,0,180
+19924,5.90%,Not experienced user,BR,T5A,0,232
+19993,5.90%,Experienced user,BR,T1,0,-58
+19993,5.90%,Experienced user,BR,T2A,2775.9,24
+19993,5.90%,Experienced user,BR,T3A,0,96
+19993,5.90%,Experienced user,BR,T4A,0,213
+19993,5.90%,Experienced user,BR,T5A,0,276
+19916,13.40%,Experienced user,BR,T1,0,-55
+19916,13.40%,Experienced user,BR,T2A,3232.4,24
+19916,13.40%,Experienced user,BR,T3A,0,106
+19916,13.40%,Experienced user,BR,T4A,0,234
+19916,13.40%,Experienced user,BR,T5A,0,308
+19954,Placebo,Not experienced user,BR,T1,0,-52
+19954,Placebo,Not experienced user,BR,T2A,0,21
+19954,Placebo,Not experienced user,BR,T3A,0,90
+19954,Placebo,Not experienced user,BR,T4A,0,181
+19954,Placebo,Not experienced user,BR,T5A,0,240
+19980,13.40%,Not experienced user,BR,T1,0,-49
+19980,13.40%,Not experienced user,BR,T2A,7938.4,20
+19980,13.40%,Not experienced user,BR,T3A,0,86
+19980,13.40%,Not experienced user,BR,T4A,0,182
+19980,13.40%,Not experienced user,BR,T5A,0,228
+19992,5.90%,Not experienced user,BR,T1,0,-52
+19992,5.90%,Not experienced user,BR,T2A,9075.2,11
+19992,5.90%,Not experienced user,BR,T3A,0,85
+19992,5.90%,Not experienced user,BR,T4A,0,194
+19992,5.90%,Not experienced user,BR,T5A,0,249
+19949,5.90%,Not experienced user,BR,T1,0,-56
+19949,5.90%,Not experienced user,BR,T2A,550.7,20
+19949,5.90%,Not experienced user,BR,T3A,0,113
+19949,5.90%,Not experienced user,BR,T4A,0,220
+19949,5.90%,Not experienced user,BR,T5A,0,281
+28270,13.40%,Not experienced user,BR,T1,0,-53
+28270,13.40%,Not experienced user,BR,T2A,56574.9,17
+28270,13.40%,Not experienced user,BR,T3A,1785.7,83
+28270,13.40%,Not experienced user,BR,T4A,0,188
+28270,13.40%,Not experienced user,BR,T5A,0,266
+28273,Placebo,Not experienced user,BR,T1,0,-57
+28273,Placebo,Not experienced user,BR,T2A,0,20
+28273,Placebo,Not experienced user,BR,T3A,0,81
+28273,Placebo,Not experienced user,BR,T4A,0,195
+28273,Placebo,Not experienced user,BR,T5A,0,253
+28275,13.40%,Not experienced user,BR,T1,0,-55
+28275,13.40%,Not experienced user,BR,T2A,1938.6,22
+28275,13.40%,Not experienced user,BR,T3A,0,90
+28275,13.40%,Not experienced user,BR,T4A,0,190
+28275,13.40%,Not experienced user,BR,T5A,0,251
+28272,5.90%,Not experienced user,BR,T1,0,-55
+28272,5.90%,Not experienced user,BR,T2A,765.2,21
+28272,5.90%,Not experienced user,BR,T3A,0,101
+28272,5.90%,Not experienced user,BR,T4A,0,206
+28272,5.90%,Not experienced user,BR,T5A,0,270
+28278,13.40%,Not experienced user,BR,T1,0,-53
+28278,13.40%,Not experienced user,BR,T2A,1758.2,21
+28278,13.40%,Not experienced user,BR,T3A,0,99
+28278,13.40%,Not experienced user,BR,T4A,0,214
+28278,13.40%,Not experienced user,BR,T5A,0,270
+28276,Placebo,Not experienced user,BR,T1,0,-58
+28276,Placebo,Not experienced user,BR,T2A,0,14
+28276,Placebo,Not experienced user,BR,T3A,0,77
+28276,Placebo,Not experienced user,BR,T4A,0,161
+28276,Placebo,Not experienced user,BR,T5A,0,211
+28288,Placebo,Not experienced user,BR,T1,0,-66
+28288,Placebo,Not experienced user,BR,T2A,686.4,16
+28288,Placebo,Not experienced user,BR,T3A,0,89
+28288,Placebo,Not experienced user,BR,T4A,0,183
+28288,Placebo,Not experienced user,BR,T5A,0,245
+28282,5.90%,Not experienced user,BR,T1,0,-50
+28282,5.90%,Not experienced user,BR,T2A,3357.8,23
+28282,5.90%,Not experienced user,BR,T3A,11343.9,92
+28282,5.90%,Not experienced user,BR,T4A,92.5,199
+28282,5.90%,Not experienced user,BR,T5A,0,254
+28280,Placebo,Not experienced user,BR,T1,0,-60
+28280,Placebo,Not experienced user,BR,T2A,343.1,15
+28280,Placebo,Not experienced user,BR,T3A,0,84
+28280,Placebo,Not experienced user,BR,T4A,0,203
+28280,Placebo,Not experienced user,BR,T5A,0,264
+28283,5.90%,Not experienced user,BR,T1,0,-54
+28283,5.90%,Not experienced user,BR,T2A,3638.7,26
+28283,5.90%,Not experienced user,BR,T3A,164.3,148
+28283,5.90%,Not experienced user,BR,T4A,0,248
+28283,5.90%,Not experienced user,BR,T5A,172.9,309
+28295,5.90%,Not experienced user,BR,T1,0,-54
+28295,5.90%,Not experienced user,BR,T2A,2376.8,25
+28295,5.90%,Not experienced user,BR,T3A,127.1,95
+28295,5.90%,Not experienced user,BR,T4A,0,207
+28295,5.90%,Not experienced user,BR,T5A,0,276
+28292,Placebo,Experienced user,BR,T1,0,-76
+28292,Placebo,Experienced user,BR,T2A,0,11
+28292,Placebo,Experienced user,BR,T3A,0,81
+28292,Placebo,Experienced user,BR,T4A,0,190
+28292,Placebo,Experienced user,BR,T5A,0,266
+28297,13.40%,Not experienced user,BR,T1,0,-51
+28297,13.40%,Not experienced user,BR,T2A,20907.2,20
+28297,13.40%,Not experienced user,BR,T3A,2307.9,82
+28297,13.40%,Not experienced user,BR,T4A,159.9,187
+28297,13.40%,Not experienced user,BR,T5A,141.3,236
+28285,Placebo,Not experienced user,BR,T1,0,-47
+28285,Placebo,Not experienced user,BR,T2A,0,16
+28285,Placebo,Not experienced user,BR,T3A,0,107
+28285,Placebo,Not experienced user,BR,T4A,0,214
+28285,Placebo,Not experienced user,BR,T5A,0,276
+28306,13.40%,Not experienced user,BR,T1,0,-54
+28306,13.40%,Not experienced user,BR,T2A,638.1,21
+28306,13.40%,Not experienced user,BR,T3A,0,98
+28306,13.40%,Not experienced user,BR,T4A,489.3,205
+28306,13.40%,Not experienced user,BR,T5A,0,263
+28335,13.40%,Not experienced user,BR,T1,0,-70
+28335,13.40%,Not experienced user,BR,T2A,9339.3,18
+28335,13.40%,Not experienced user,BR,T3A,0,89
+28335,13.40%,Not experienced user,BR,T4A,0,200
+28335,13.40%,Not experienced user,BR,T5A,0,271
+28342,5.90%,Not experienced user,BR,T1,0,-61
+28342,5.90%,Not experienced user,BR,T2A,664.3,26
+28342,5.90%,Not experienced user,BR,T3A,0,106
+28342,5.90%,Not experienced user,BR,T4A,0,226
+28342,5.90%,Not experienced user,BR,T5A,0,285
+28293,Placebo,Not experienced user,BR,T1,0,-88
+28293,Placebo,Not experienced user,BR,T2A,0,13
+28293,Placebo,Not experienced user,BR,T3A,0,60
+28293,Placebo,Not experienced user,BR,T4A,0,158
+28293,Placebo,Not experienced user,BR,T5A,0,219
+28347,Placebo,Not experienced user,BR,T1,0,-63
+28347,Placebo,Not experienced user,BR,T2A,0,22
+28347,Placebo,Not experienced user,BR,T3A,0,96
+28347,Placebo,Not experienced user,BR,T4A,0,211
+28347,Placebo,Not experienced user,BR,T5A,0,269
+28349,Placebo,Experienced user,BR,T1,0,-53
+28349,Placebo,Experienced user,BR,T2A,0,13
+28349,Placebo,Experienced user,BR,T3A,86.7,81
+28349,Placebo,Experienced user,BR,T4A,376.5,194
+28349,Placebo,Experienced user,BR,T5A,0,258
+28344,5.90%,Not experienced user,BR,T1,0,-52
+28344,5.90%,Not experienced user,BR,T2A,777.8,18
+28344,5.90%,Not experienced user,BR,T3A,0,89
+28344,5.90%,Not experienced user,BR,T4A,0,211
+28344,5.90%,Not experienced user,BR,T5A,0,279
+28394,Placebo,Not experienced user,BR,T1,0,-58
+28394,Placebo,Not experienced user,BR,T2A,0,13
+28394,Placebo,Not experienced user,BR,T3A,0,99
+28394,Placebo,Not experienced user,BR,T4A,0,217
+28394,Placebo,Not experienced user,BR,T5A,0,288
+28397,Placebo,Experienced user,BR,T1,0,-64
+28397,Placebo,Experienced user,BR,T2A,0,19
+28397,Placebo,Experienced user,BR,T3A,0,97
+28397,Placebo,Experienced user,BR,T4A,0,222
+28397,Placebo,Experienced user,BR,T5A,0,287
+28399,Placebo,Experienced user,BR,T1,0,-67
+28399,Placebo,Experienced user,BR,T2A,166.8,15
+28399,Placebo,Experienced user,BR,T3A,0,89
+28399,Placebo,Experienced user,BR,T4A,0,205
+28399,Placebo,Experienced user,BR,T5A,0,271
+28411,5.90%,Not experienced user,BR,T1,0,-77
+28411,5.90%,Not experienced user,BR,T2A,2876.2,17
+28411,5.90%,Not experienced user,BR,T3A,0,78
+28411,5.90%,Not experienced user,BR,T4A,0,174
+28411,5.90%,Not experienced user,BR,T5A,0,234
+28420,5.90%,Experienced user,BR,T1,0,-62
+28420,5.90%,Experienced user,BR,T2A,1656.8,18
+28420,5.90%,Experienced user,BR,T3A,208.7,86
+28420,5.90%,Experienced user,BR,T4A,0,194
+28420,5.90%,Experienced user,BR,T5A,789.2,240
+28398,13.40%,Experienced user,BR,T1,0,-64
+28398,13.40%,Experienced user,BR,T2A,414.8,17
+28398,13.40%,Experienced user,BR,T3A,0,97
+28398,13.40%,Experienced user,BR,T4A,0,218
+28398,13.40%,Experienced user,BR,T5A,0,288
+28437,13.40%,Not experienced user,BR,T1,0,-57
+28437,13.40%,Not experienced user,BR,T2A,1524.1,25
+28437,13.40%,Not experienced user,BR,T3A,0,97
+28437,13.40%,Not experienced user,BR,T4A,0,225
+28437,13.40%,Not experienced user,BR,T5A,0,290
+T0876,5.90%,Experienced user,BR,T1,0,-58
+T0876,5.90%,Experienced user,BR,T2A,342.7,21
+T0876,5.90%,Experienced user,BR,T3A,0,104
+T0876,5.90%,Experienced user,BR,T4A,0,224
+T0876,5.90%,Experienced user,BR,T5A,0,291
+28407,5.90%,Experienced user,BR,T1,0,-82
+28407,5.90%,Experienced user,BR,T2A,1651.6,23
+28407,5.90%,Experienced user,BR,T3A,0,91
+28407,5.90%,Experienced user,BR,T4A,0,219
+28407,5.90%,Experienced user,BR,T5A,0,288
+28453,13.40%,Experienced user,BR,T1,0,-83
+28453,13.40%,Experienced user,BR,T2A,1446.2,26
+28453,13.40%,Experienced user,BR,T3A,104.2,98
+28453,13.40%,Experienced user,BR,T4A,0,222
+28453,13.40%,Experienced user,BR,T5A,0,277
+28461,5.90%,Experienced user,BR,T1,0,-67
+28461,5.90%,Experienced user,BR,T2A,1655.3,18
+28461,5.90%,Experienced user,BR,T3A,0,92
+28461,5.90%,Experienced user,BR,T4A,0,203
+28461,5.90%,Experienced user,BR,T5A,0,278
+28462,5.90%,Experienced user,BR,T1,0,-61
+28462,5.90%,Experienced user,BR,T2A,1934.9,23
+28462,5.90%,Experienced user,BR,T3A,86.2,104
+28462,5.90%,Experienced user,BR,T4A,0,223
+28462,5.90%,Experienced user,BR,T5A,0,288
+28463,5.90%,Not experienced user,BR,T1,0,-63
+28463,5.90%,Not experienced user,BR,T2A,0,67
+28463,5.90%,Not experienced user,BR,T3A,0,153
+28463,5.90%,Not experienced user,BR,T4A,0,263
+28463,5.90%,Not experienced user,BR,T5A,0,313
+28464,5.90%,Not experienced user,BR,T1,0,-66
+28464,5.90%,Not experienced user,BR,T2A,5511.3,23
+28464,5.90%,Not experienced user,BR,T3A,0,107
+28464,5.90%,Not experienced user,BR,T4A,0,229
+28464,5.90%,Not experienced user,BR,T5A,0,294
+28460,Placebo,Not experienced user,BR,T1,0,-71
+28460,Placebo,Not experienced user,BR,T2A,0,13
+28460,Placebo,Not experienced user,BR,T3A,0,82
+28460,Placebo,Not experienced user,BR,T4A,0,192
+28460,Placebo,Not experienced user,BR,T5A,0,254
